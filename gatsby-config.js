@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+		{
+      resolve: `gatsby-plugin-global-styles`,
+      options: {
+        pathToConfigModule: `src/styles/GlobalStyleComponent`,
+        props: {
+          theme: `src/styles/theme`,
+          other: {
+            light: true
+					}
+				}
+      },
+    },
+	],
 }
