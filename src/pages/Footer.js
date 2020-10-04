@@ -1,5 +1,11 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+	faTwitterSquare,
+	faLinkedin,
+	faGitlab
+} from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
 return <footer id="section6" className="one-page">
@@ -33,10 +39,10 @@ return <footer id="section6" className="one-page">
 								<address className="text-center">
 									<b className="text-uppercase">social</b> <br/> 
 									<ul className="list-inline">
-										<li><a href="https://twitter.com/allenoyieke" title="Twitter"><i className="fa fa-twitter-square"></i></a></li>
-										<li><a href="https://linkedin.com/in/allen-oyieke-88b70215b"><i className="fa fa-linkedin"></i></a></li>
-										<li><a href="https://gitlab.com/oyiekeallen"><i className="fa fa-github"></i></a></li> 
-										<li><a href="https://gitlab.com/heretolearn"><i className="fa fa-gitlab"></i></a></li>                               
+										<li><a href="https://twitter.com/allenoyieke" title="Twitter"> <FontAwesomeIcon icon={faTwitterSquare}/></a></li>
+										<li><a href="https://linkedin.com/in/allen-oyieke-88b70215b"> <FontAwesomeIcon icon={faLinkedin}/> </a></li>
+										<li><a href="https://gitlab.com/oyiekeallen"><FontAwesomeIcon icon={faGitlab}/> </a></li> 
+										<li><a href="https://gitlab.com/heretolearn"><FontAwesomeIcon icon={faGitlab}/> </a></li>                               
 									</ul>
 								</address>
 								</div>

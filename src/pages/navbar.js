@@ -2,12 +2,13 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Navbar() {
-return  <nav className="navbar navbar-default animated fadeInDown">
+return  <nav className="nav-bg navbar navbar-default animated fadeInDown">
 					<div className="container-fluid">
 							{/* Brand and toggle get grouped for better mobile display */}
 							<div className="navbar-header">
 									<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
-											<span className="sr-only">Toggle navigation</span> </button>
+										<span className="sr-only">Toggle navigation</span> 
+									</button>
 									<a className="navbar-brand" > <b className="logo-text"> Oyieke Allen </b> </a>
 							</div>
 							{/* Collect the nav links, forms, and other content for toggling */}

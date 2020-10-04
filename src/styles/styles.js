@@ -4,6 +4,10 @@ const styles= css`
 
 	@charset "UTF-8";
 
+	#nav-bg  {
+		background: rgba(46,61,86,.6)!important
+	}
+
 	body {
 		margin: 0;
 		padding: 0;
@@ -178,8 +182,9 @@ const styles= css`
 
 	.fixed-right-socials li {
 		margin: 0;
-		font-size: 10em;
-		line-height: .2em;
+		font-size: 2em;
+		line-height: 2em;
+		color: #FFF;
 	}
 
 	.navbar-default {
@@ -189,7 +194,7 @@ const styles= css`
 		top: 0;
 		left: 0;
 		width: 100%;
-		background: 0 0;
+		background: rgba(46,61,86,.6)!important;
 		z-index: 9;
 		-webkit-animation-delay: 1.7s;
 		-o-animation-delay: 1.7s;
@@ -349,7 +354,7 @@ const styles= css`
 		z-index: 2;
 	}
 
-	#particles-js {
+	.particles-js {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -2238,7 +2243,7 @@ const styles= css`
 
 	.navbar-fixed-top .navbar-brand {
 		border: 1px solid #333;
-		background: url(../images/logo-fixed.png) no-repeat 10px 50%;
+		background: url(./src/images/logo-fixed.png) no-repeat 10px 50%;
 	}
 
 	.navbar-fixed-top .navbar-brand:before {

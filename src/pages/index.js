@@ -1,9 +1,16 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import GlobalStyleComponent from '../styles/GlobalStyleComponent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+	faGithub,
+	faTwitterSquare,
+	faLinkedin,
+	faGitlab
+} from '@fortawesome/free-brands-svg-icons'
+
 
 import Navbar from './navbar'
-
 import Header from './Header'
 import CodingExperience from './CodingExperience'
 import SkillSet from './SkillSet'
@@ -18,14 +25,15 @@ return  <div>
 						<h1 class="animated pulse text-right"><b>loading ... </b></h1>
 					</div> */}
 					
-					<div className="fixed-left-contact"> </div>
+					<div className="fixed-left-contact"> 
+					</div>
 
 					<div className="fixed-right-socials">
 						<ul>
-								<li><a href="https://twitter.com/allenoyieke" title="Twitter"><i className="fa fa-twitter-square fa-2x"></i></a></li>
-								<li><a href="https://linkedin.com/in/allen-oyieke-88b70215b"><i className="fa fa-linkedin"></i></a></li>
-								<li><a href="https://gitlab.com/oyiekeallen"><i className="fa fa-github"></i></a></li> 
-								<li><a href="https://gitlab.com/heretolearn"><i className="fa fa-gitlab"></i></a></li> 
+								<li><a href="https://twitter.com/allenoyieke"> <FontAwesomeIcon icon={faTwitterSquare} size='sm' color='white'/> </a></li>
+								<li><a href="https://linkedin.com/in/allen-oyieke-88b70215b"> <FontAwesomeIcon icon={faLinkedin} size='sm' color='white'/> </a></li>
+								<li><a href="https://gitlab.com/oyiekeallen"> <FontAwesomeIcon icon={faGithub} size='sm' color='white'/></a></li> 
+								<li><a href="https://gitlab.com/heretolearn"> <FontAwesomeIcon icon={faGitlab} size='sm' color='white'/></a></li> 
 						</ul>
 					</div>
 
