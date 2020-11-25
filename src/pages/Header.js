@@ -27,7 +27,9 @@ class Header extends React.Component {
 
 	componentWillUnmount() 
 	{
-		this.typed.destroy()
+		if (this.typed){
+			this.typed.destroy()
+		}
 	}
 
 
@@ -61,32 +63,52 @@ class Header extends React.Component {
 											fpsLimit: 60,
 											interactivity: {
 												detectsOn: "canvas",
-												events: {
-													onClick: {
-														enable: true,
-														mode: "push",
+												events:
+												{
+													onhover:
+													{
+														enable: !0,
+														mode: "grab"
 													},
-													onHover: {
-														enable: true,
-														mode: "grab",
+													onclick:
+													{
+														enable: !0,
+														mode: "push"
 													},
-													resize: true,
+													resize: !0
 												},
-												modes: {
-													bubble: {
+												modes:
+												{
+													grab:
+													{
+														distance: 140,
+														line_linked:
+														{
+															opacity: 1
+														}
+													},
+													bubble:
+													{
 														distance: 400,
-														duration: 2,
-														opacity: 0.8,
 														size: 40,
+														duration: 2,
+														opacity: 8,
+														speed: 3
 													},
-													push: {
-														quantity: 4,
-													},
-													repulse: {
+													repulse:
+													{
 														distance: 200,
-														duration: 0.4,
+														duration: .4
 													},
-												},
+													push:
+													{
+														particles_nb: 4
+													},
+													remove:
+													{
+														particles_nb: 2
+													}
+												}
 											},
 											particles: {
 												color: {
@@ -102,20 +124,28 @@ class Header extends React.Component {
 												collisions: {
 													enable: true,
 												},
-												move: {
+												move:
+												{
+													enable: !0,
+													speed: 3,
 													direction: "none",
-													enable: true,
-													outMode: "bounce",
-													random: false,
-													speed: 6,
-													straight: false,
+													random: !1,
+													straight: !1,
+													out_mode: "out",
+													bounce: !1,
+													attract:
+													{
+														enable: !1,
+														rotateX: 600,
+														rotateY: 1200
+													}
 												},
 												number: {
 													density: {
-														enable: true,
+														enable: false,
 														value_area: 800,
 													},
-													value: 80,
+													value: 110,
 												},
 												opacity:
 												{
@@ -129,12 +159,30 @@ class Header extends React.Component {
 														sync: !1
 													}
 												},
-												shape: {
+												shape:
+												{
 													type: "circle",
+													stroke:
+													{
+														width: 0,
+														color: "#000000"
+													},
+													polygon:
+													{
+														nb_sides: 5
+													}
 												},
-												size: {
-													random: true,
-													value: 5,
+												size:
+												{
+													value: 3,
+													random: !0,
+													anim:
+													{
+														enable: !1,
+														speed: 40,
+														size_min: .1,
+														sync: !1
+													}
 												},
 											},
 											detectRetina: true,

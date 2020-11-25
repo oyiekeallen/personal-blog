@@ -2,11 +2,11 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function SkillSet() {
-return	<section id="section1" className="one-page">
+return	<section id="skill-set" className="one-page">
 					<div className="container">
 						
 						<div className="row">
-							<div className="col-md-offset-5 col-md-2 text-center">
+							<div className="offset-md-5 col-md-2 text-center">
 								<div className="section-bg">
 									<p> <i data-icon="&#xe038;"></i> </p>
 								</div>
@@ -14,7 +14,7 @@ return	<section id="section1" className="one-page">
 						</div>
 						
 						<div className="row">
-							<div className="col-md-offset-4 col-md-4 text-center section-intro">
+							<div className="offset-md-4 col-md-4 text-center section-intro">
 								<h2><b>Skills Set</b></h2>
 								<span>Right. Let's throw some light on my skills.</span>
 							</div>

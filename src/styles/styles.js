@@ -4,10 +4,6 @@ const styles= css`
 
 	@charset "UTF-8";
 
-	#nav-bg  {
-		background: rgba(46,61,86,.6)!important
-	}
-
 	body {
 		margin: 0;
 		padding: 0;
@@ -194,7 +190,7 @@ const styles= css`
 		top: 0;
 		left: 0;
 		width: 100%;
-		background: rgba(46,61,86,.6)!important;
+		background: rgba(141,151,155,1);
 		z-index: 9;
 		-webkit-animation-delay: 1.7s;
 		-o-animation-delay: 1.7s;
@@ -230,7 +226,9 @@ const styles= css`
 	}
 
 	.logo-text {
-		margin-left: 9px;
+		margin-left: 5px;
+		position: relative;
+		top: -6px
 	}
 
 	.navbar-nav>li>a {
@@ -262,7 +260,7 @@ const styles= css`
 		height: 100%;
 		left: 0;
 		top: 0;
-		background: rgba(46,61,86,.6);
+		background: rgba(141,151,155,1);
 	}
 
 	html {
@@ -2201,18 +2199,11 @@ const styles= css`
 		color: #333;
 	}
 
-	.navbar-default {
-		background: 0 0;
-	}
 
 	/* .front-header {
 		background: url(../images/header-bg.jpg) no-repeat;
 		background-size: cover;
 	} */
-
-	header:before {
-		background: rgba(46,61,86,.6);
-	}
 
 	#blog-content,#section1,#section3,#section5,#section8,.guest-comment .comment-contain,.post-content .author-comment,.post-content .cited,footer {
 		background: #ecf1f4;

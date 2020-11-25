@@ -3,7 +3,7 @@
   "private": true,
   "description": "Oyieke new personal playground",
   "version": "0.0.1",
-  "license": "0BSD",
+  "license": "BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -21,6 +21,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "@mdx-js/mdx": "1.6.18",
     "@nfront/global-styles": "1.2.1",
+    "apexcharts": "3.22.0",
     "babel-plugin-styled-components": "1.11.1",
     "bootstrap": "4.5.2",
     "et-line": "1.0.1",
@@ -30,6 +31,7 @@
     "gatsby-plugin-styled-components": "3.3.11",
     "react": "^16.12.0",
     "react-bootstrap": "1.3.0",
+    "react-chrono": "1.7.7",
     "react-dom": "^16.12.0",
     "react-tsparticles": "1.17.12",
     "styled-components": "5.2.0",
@@ -41,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/oyiekeallen/oyiekeallen.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/oyiekeallen/oyiekeallen.github.io/issues"
   }
 }

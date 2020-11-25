@@ -7,18 +7,18 @@ import {
 	faGitlab
 } from '@fortawesome/free-brands-svg-icons'
 
-export default function Footer() {
-return <footer id="section6" className="one-page">
+export default function Contact() {
+return <footer id="contact" className="one-page">
 					<div className="container">
 						<div className="row">
-							<div className="col-md-offset-5 col-md-2 text-center">
+							<div className="offset-md-5 col-md-2 text-center">
 								<div className="section-bg">
 									<p> <i data-icon="&#xe028;"></i> </p>
 								</div>
 							</div>
 						</div>
 						<div className="row">
-							<div className="col-md-offset-4 col-md-4 text-center section-intro">
+							<div className="offset-md-4 col-md-4 text-center section-intro">
 								<h2><b>Contact Me</b></h2>
 								<span>Agree - it's time to get in touch</span><span className="coma">semeiotic</span>
 							</div>
@@ -26,7 +26,7 @@ return <footer id="section6" className="one-page">
 						<div className="row">
 							{/* contact form */}
 							{/* contacts */}
-							<div className="col-md-offset-4 col-sm-4 col-md-4 contact-details">
+							<div className="offset-md-4 col-sm-4 col-md-4 contact-details">
 								<address className="text-center"> 
 									<b className="text-uppercase">Address</b> <br/> <span>Nairobi, Kenya</span> 
 								</address>

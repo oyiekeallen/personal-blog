@@ -10,11 +10,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 
-import Navbar from './navbar'
+import NavBar from './navbar'
 import Header from './Header'
 import CodingExperience from './CodingExperience'
 import SkillSet from './SkillSet'
-import Footer from './Footer'
+import Contact from './Contact'
 
 export default function Home() {
 return  <div>
@@ -37,16 +37,16 @@ return  <div>
 						</ul>
 					</div>
 
-					<Navbar/>
+					<NavBar/>
 
 					<div id="page-content">
 							<Header/>
 
-							<SkillSet/>
+							{/* <SkillSet/> */}
 							
 							<CodingExperience/>
 
-							<Footer/>
+							<Contact/>
 					</div>
 
 				</div>
