@@ -167,7 +167,7 @@ const styles= css`
 	.fixed-right-socials {
 		position: fixed;
 		right: 30px;
-		top: 45%;
+		top: 30%;
 		z-index: 20;
 	}
 
@@ -341,13 +341,17 @@ const styles= css`
 	}
 
 	.animated-intro {
-		height: 90px;
+		height: 118px;
 	}
 
 	.typed-cursor {
 		display: none;
 	}
 
+    .coding-experience {
+      width: 100vw
+      heigh: 100vh
+    }
 	.particles-header .user-block,.particles-header .user-description {
 		z-index: 2;
 	}

@@ -42,9 +42,9 @@ return  <div>
 					<div id="page-content">
 							<Header/>
 
-							{/* <SkillSet/> */}
+							{<SkillSet/>}
 							
-							<CodingExperience/>
+                            {/*<CodingExperience/> */}
 
 							<Contact/>
 					</div>
