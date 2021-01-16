@@ -1,14 +1,11 @@
 import React from "react"
-import { ListGroup }  from 'react-bootstrap' 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faTwitterSquare,
 	faLinkedin,
-	faGitlab,
-    faGithub,
+	faGitlab
 } from '@fortawesome/free-brands-svg-icons'
-
-import { faEnvelope} from '@fortawesome/free-regular-svg-icons'
 
 export default function Contact() {
 return <footer id="contact" className="one-page">
@@ -16,7 +13,7 @@ return <footer id="contact" className="one-page">
 						<div className="row">
 							<div className="offset-md-5 col-md-2 text-center">
 								<div className="section-bg">
-									<p> <FontAwesomeIcon icon={faEnvelope} size='2x' color='#bbbdbe' transform={{ rotate:315 }} />  </p>
+									<p> <i data-icon="&#xe028;"></i> </p>
 								</div>
 							</div>
 						</div>
@@ -41,30 +38,12 @@ return <footer id="contact" className="one-page">
 								</address>
 								<address className="text-center">
 									<b className="text-uppercase">social</b> <br/> 
-                                    <ListGroup horizontal variant="flush" style={{ display: "flex", alignItems: "center", justifyContent: "center"}}>
-
-                                      <ListGroup.Item >
-                                        <a href="https://twitter.com/allenoyieke" title="Twitter"> 
-                                          <FontAwesomeIcon icon={faTwitterSquare}/>
-                                        </a>
-                                      </ListGroup.Item>
-
-                                      <ListGroup.Item>
-                                        <a href="https://linkedin.com/in/allen-oyieke-88b70215b"> 
-                                          <FontAwesomeIcon icon={faLinkedin}/> 
-                                        </a>
-                                      </ListGroup.Item>
-
-                                      <ListGroup.Item>
-                                        <a href="https://github.com/oyiekeallen">
-                                          <FontAwesomeIcon icon={faGithub}/>
-                                        </a>
-                                      </ListGroup.Item>
-
-                                      <ListGroup.Item><a href="https://gitlab.com/heretolearn">
-                                        <FontAwesomeIcon icon={faGitlab}/> </a>
-                                      </ListGroup.Item>
-									</ListGroup>
+									<ul className="list-inline">
+										<li><a href="https://twitter.com/allenoyieke" title="Twitter"> <FontAwesomeIcon icon={faTwitterSquare}/></a></li>
+										<li><a href="https://linkedin.com/in/allen-oyieke-88b70215b"> <FontAwesomeIcon icon={faLinkedin}/> </a></li>
+										<li><a href="https://gitlab.com/oyiekeallen"><FontAwesomeIcon icon={faGitlab}/> </a></li> 
+										<li><a href="https://gitlab.com/heretolearn"><FontAwesomeIcon icon={faGitlab}/> </a></li>                               
+									</ul>
 								</address>
 								</div>
 								{/* /.contacts */}
