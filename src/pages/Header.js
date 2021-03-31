@@ -1,7 +1,7 @@
 
 import React from "react"
 import Particles from "react-tsparticles";
-import 'bootstrap/dist/css/bootstrap.min.css' 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Typed from 'typed.js';
 import ownerImage from '../images/owner-image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,8 +15,8 @@ class Header extends React.Component {
 	{
 		var typed = new Typed('.animated-intro', {
 			strings: [
-				"Welcome, I'm glad you made it, let me introduce myself.", 
-				"How would I describe myself? Well I would like to think I am an inquisitive, energetic and skilled in leadership, with a strong foundation in math, logic and cross-platform programming.", 
+				"Welcome, I'm glad you made it, let me introduce myself.",
+				"How would I describe myself? Well I would like to think I am an inquisitive, energetic and skilled in leadership, with a strong foundation in math, logic and cross-platform programming.",
 				"Keep scrolling there is more to see."],
 			typeSpeed: 60,
 			backSpeed: 50,
@@ -25,7 +25,7 @@ class Header extends React.Component {
 		});
 	}
 
-	componentWillUnmount() 
+	componentWillUnmount()
 	{
 		if (this.typed){
 			this.typed.destroy()
@@ -38,17 +38,17 @@ class Header extends React.Component {
 							<div className="container">
 								<div className="row">
 									<div className=" col-sm-6 col-md-4 text-center user-block animated fadeInUp">
-										<img src={ownerImage} alt="" className="img-responsive"/> 
+										<img src={ownerImage} alt="" className="img-responsive"/>
 										<h2>I'm <b>Oyieke Allen </b> </h2>
 										<p className="text-uppercase function"><b>Software Engineer &#x00026; Entrepreneur</b>
 										</p>
 									</div>
 									<div className="col-sm-6 col-md-7 user-description">
-										<h2><b>Hello!</b></h2> 
-										<h2 id="animated-intro" className="animated-intro"></h2> 
+										<h2><b>Hello!</b></h2>
+										<h2 id="animated-intro" className="animated-intro"></h2>
 										<p></p>
-										<a href="https://github.com/oyiekeallen" className="btn text-uppercase">  
-										<FontAwesomeIcon icon={faGithub} /> View guthub page
+										<a href="https://github.com/oyiekeallen" className="btn text-uppercase">
+											<FontAwesomeIcon icon={faGithub} /> View guthub page
 										</a>
 									</div>
 									<Particles

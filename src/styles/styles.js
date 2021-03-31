@@ -231,7 +231,7 @@ const styles= css`
 		top: -6px
 	}
 
-	.navbar-nav>li>a {
+	.navbar-nav >li>a {
 		padding: 7px 15px;
 		margin: 0 5px;
 		line-height: 1.45;
@@ -3288,6 +3288,21 @@ const styles= css`
 	.icon-dribbble:before {
 		content: "\e063";
 	}
-`
 
+	.center {
+		margin: auto;
+		width: 60%;
+		border: 5px ;
+		padding: 10px;
+	}
+
+	.list-inline ul > li {
+		display: inline-block;
+		/* You can also add some margins here to make it look prettier */
+		margin: 5px 10px 5px 10px;
+		zoom:1;
+		*display:inline;
+		/* this fix is needed for IE7- */
+}
+`
 export default styles;
