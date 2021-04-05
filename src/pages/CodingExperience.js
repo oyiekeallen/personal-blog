@@ -2,9 +2,8 @@
 import React from "react"
 import { Chrono } from 'react-chrono'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-		faAt
-	} from '@fortawesome/free-brands-svg-icons'
+import { faHistory } from '@fortawesome/free-solid-svg-icons'
+
 export default function CoingExperience(){
 	const items = [
 		{
@@ -36,13 +35,6 @@ export default function CoingExperience(){
 
 		<section id="coding-experience" className="one-page">
 			<div className="container">
-				<div className="row">
-					<div className="offset-md-5 col-md-2 text-center">
-						<div className="section-bg">
-							<p> <FontAwesomeIcon icon={faAt}/> </p>
-						</div>
-					</div>
-				</div>
 				<br/>
 				<div className="row">
 					<div className="offset-md-4 col-md-4 text-center section-intro">

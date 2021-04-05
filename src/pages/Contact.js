@@ -5,8 +5,11 @@ import {
 	faTwitterSquare,
 	faLinkedin,
 	faGitlab,
-	faGithub
+	faGithub,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+	faAddressCard
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
 return <footer id="contact" className="one-page">
@@ -14,7 +17,7 @@ return <footer id="contact" className="one-page">
 						<div className="row">
 							<div className="offset-md-5 col-md-2 text-center">
 								<div className="section-bg">
-									<p> <i data-icon="&#xe028;"></i> </p>
+									<p> <i> <FontAwesomeIcon icon={faAddressCard} size='xs'/> </i> </p>
 								</div>
 							</div>
 						</div>

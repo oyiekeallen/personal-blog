@@ -315,7 +315,7 @@ const styles= css`
 		text-align: center;
 		width: 134px;
 		padding: 25px 0;
-		margin: 50px 0 50px 0;
+		margin: 30px 0 30px 0;
 	}
 
 	.user-description h2:nth-child(2) {
@@ -326,7 +326,7 @@ const styles= css`
 	.user-description a {
 		width: 268px;
 		height: 58px;
-		margin-top: 50px;
+		margin-top: 120px;
 		color: #fff;
 		border: 1px solid #fff;
 		border-radius: 0;
@@ -2234,7 +2234,7 @@ const styles= css`
 
 	.navbar-fixed-top .navbar-brand {
 		border: 1px solid #333;
-		background: url(./src/images/logo-fixed.png) no-repeat 10px 50%;
+		background: url(/src/images/logo-fixed.png) no-repeat 10px 50%;
 	}
 
 	.navbar-fixed-top .navbar-brand:before {

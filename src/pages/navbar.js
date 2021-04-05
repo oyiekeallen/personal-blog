@@ -4,9 +4,6 @@ import {Navbar, NavDropdown, Nav}  from 'react-bootstrap';
 export default function NavBar() {
 
 	return <Navbar className="navbar navbar-default animated">
-					<Navbar.Brand className="navbar-header" href="#">
-						<b className="logo-text"> Oyieke Allen </b>
-					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 					<Navbar.Collapse id="responsive-navbar-nav">
